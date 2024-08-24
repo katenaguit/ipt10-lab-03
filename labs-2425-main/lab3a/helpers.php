@@ -4,7 +4,7 @@ define('MAX_QUESTION_NUMBER', 50);
 
 function retrieve_questions() {
     // 1. Open the questions/triviaquiz.json file
-    $json_string = file_get_contents("./questions/quiz.json");
+    $json_string = file_get_contents("./questions/triviaquiz.json");
     
     // 2. Convert it the array
     $json_data = json_decode($json_string, true);
