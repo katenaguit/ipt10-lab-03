@@ -14,7 +14,7 @@ $contact_number = $_POST['contact_number'] ?? '';
 $agree = $_POST['agree'] ?? '';
 
 # Load the JSON file and convert it into a PHP array
-$json_file = file_get_contents('quiz.json');
+$json_file = file_get_contents('triviaquiz.json');
 $data = json_decode($json_file, true);
 
 # Extract questions and correct answers from JSON
