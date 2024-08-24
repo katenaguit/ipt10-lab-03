@@ -17,7 +17,7 @@ $agree = $_POST['agree'];
 $answers = isset($_POST['answers']) ? $_POST['answers'] : [];
 
 // Load trivia quiz questions and answers from the JSON file
-$json_file = file_get_contents('quiz.json');
+$json_file = file_get_contents('triviaquiz.json');
 $data = json_decode($json_file, true);
 
 // Extract correct answers and questions from JSON
